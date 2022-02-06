@@ -1,0 +1,21 @@
+{
+  "name": "overflow-y",
+  "description": "Unhide scroll",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage","activeTab","scripting"],
+  "commands": {
+      "_execute_page_action": {
+          "suggested_key": {
+              "default": "Alt+R",
+              "mac": "MacCtrl+R"
+          }
+      }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
